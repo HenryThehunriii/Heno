@@ -12,7 +12,7 @@ body{
         border: 6px double black;
         border-radius: 15px;
         text-align: center;
-        background-color:lightgrey;
+        background-image:url('WoodFlooringAshSuperWhite001_COL_1K.jpg');
         filter: none;
 
 #container{
@@ -35,7 +35,7 @@ h2{
 .gridItem{
     text-align:center;
     padding:0px;
-    font-size:80px;
+    font-size:75px;
     height:100px;
     width:100px;
     border:3px black solid;
@@ -46,7 +46,7 @@ h2{
     text-align:center;
     padding:0px;
     margin-top:15px;
-    font-size:80px;
+    font-size:75px;
     height:100px;
     width:100px;
     border:2px black solid;

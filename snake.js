@@ -88,8 +88,17 @@ function checkCollision(){
     if(snakeBody[0].x<-20 || snakeBody[0].y<-20 || snakeBody[0].x>(gameCanvas.width+20)|| snakeBody[0].y>(gameCanvas.height+20)){
         clearInterval(drawInterval)
         clearInterval(moveInterval)
-        score = 'Game Over'
-        document.getElementById('score').style.color="red"
+        if(score>30){
+            alert('Congratulations! You more than 30 points!')
+            document.getElementById('score').style.color="lightgreen"
+        }
+        else{
+            score = 'Game Over'
+            document.getElementById('score').style.color="red"
+        }
+
+
+
     }
     for(let k = 1; k < snakeLength; k++){
         if(snakeBody[0].x==snakeBody[k].x && snakeBody[0].y==snakeBody[k].y){
